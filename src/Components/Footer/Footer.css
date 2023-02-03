@@ -9,6 +9,8 @@
   align-items: center;
 
   color: rgb(51, 50, 50);
+
+  user-select: none;
 }
 
 .copyright {
