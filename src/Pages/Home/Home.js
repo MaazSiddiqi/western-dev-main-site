@@ -1,15 +1,16 @@
-import React from "react";
-import "./Home.css";
-import tech from "./tech.png";
-import Toolkit from "../../Components/Toolkit/toolkit";
-import Typewriter from "typewriter-effect";
+import React from "react"
+import "./Home.css"
+import tech from "./tech.png"
+import Toolkit from "../../Components/Toolkit/toolkit"
+import Typewriter from "typewriter-effect"
+import Footer from "../../Components/Footer"
 
 const WHAT_IS_WDS_POINTS = [
   "We are a community of developers, designers, consultants, and engineers",
   "We are Westerns Fastest Growing Tech Club",
   "We are club for all students interested in technology",
   "We are a collective of students, applying our skills to support our community",
-];
+]
 
 export default function Home() {
   return (
@@ -30,7 +31,6 @@ export default function Home() {
           <img src={tech} alt="Dev society hero"></img>
         </div>
       </section>
-
       <section className="about">
         <div className="what-is">
           <h1 className="what-is-title">
@@ -45,27 +45,27 @@ export default function Home() {
               onInit={(typewriter) => {
                 typewriter
                   .typeString(
-                    "We are a community of developers, designers, consultants, and engineers"
-                  )
-                  .pauseFor(2500)
-                  .deleteAll(2);
-                typewriter
-                  .typeString("We are Westerns Fastest Growing Tech Club")
-                  .pauseFor(2500)
-                  .deleteAll(2);
-                typewriter
-                  .typeString(
-                    "We are club for all students interested in technology"
-                  )
-                  .pauseFor(2500)
-                  .deleteAll(2);
-                typewriter
-                  .typeString(
-                    "We are a collective of students, applying our skills to support our community"
+                    "We are a community of developers, designers, consultants, and engineers",
                   )
                   .pauseFor(2500)
                   .deleteAll(2)
-                  .start();
+                typewriter
+                  .typeString("We are Westerns Fastest Growing Tech Club")
+                  .pauseFor(2500)
+                  .deleteAll(2)
+                typewriter
+                  .typeString(
+                    "We are club for all students interested in technology",
+                  )
+                  .pauseFor(2500)
+                  .deleteAll(2)
+                typewriter
+                  .typeString(
+                    "We are a collective of students, applying our skills to support our community",
+                  )
+                  .pauseFor(2500)
+                  .deleteAll(2)
+                  .start()
               }}
             />
           </div>
@@ -103,13 +103,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      <section className="footer">
-        <Toolkit />
-        <div className="copyright">
-          <small>&copy; 2022 Western Developers Society.</small>
-        </div>
-      </section>
+      <Footer />
     </div>
-  );
+  )
 }
