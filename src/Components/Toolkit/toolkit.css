@@ -1,0 +1,76 @@
+.toolkit {
+  display: grid;
+  place-content: center;
+
+  color: rgb(173, 173, 173);
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+}
+
+.toolkit > h4 {
+  padding: 0rem 0rem 0.7rem 0rem;
+
+  place-self: center;
+
+  font-weight: 800;
+}
+
+.toolkit:hover {
+  color: black;
+  filter: grayscale(0%);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.tools > img {
+  scale: 40%;
+
+  opacity: 70%;
+  transform: translateX(-25%) translateY(-25%);
+
+  transition: 0.3s ease;
+}
+
+.tools > img:hover {
+  opacity: 100%;
+  scale: 41%;
+}
+
+/* .team-container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: center;
+    color: #393939;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 80%;
+
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 7%;
+    gap: 3rem;
+    margin: auto;
+}
+
+.toolkit-title {
+    font-weight: 700;
+    font-size:45px;
+    align-self: center;
+}
+
+.toolkitCard {
+    margin: auto;
+    font-size: 12px;
+}
+
+
+ */

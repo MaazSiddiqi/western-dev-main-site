@@ -1,0 +1,102 @@
+/* Mobile styling */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block !important;
+    z-index: 100;
+    background-color: transparent;
+    width: 26px;
+    background-size: cover;
+    transition: 0.1s ease;
+  }
+  .hamburger:not(.active) {
+    background-image: url("hamburger.png");
+  }
+  .hamburger.active {
+    background-image: url("xIcon.png");
+  }
+
+  .links-container {
+    width: 75vw;
+    height: 1000vh;
+    background: rgba(0, 0, 0, .75);
+    position: absolute;
+    transition: 1s ease;
+    top: 0;
+  }
+  .links-container:not(.active) {
+    opacity: 0;
+    left: -100%;
+  }
+  .links-container.active {
+    opacity: 100%;
+    left: 0;
+  }
+
+  .links-container ul {
+    display: block;
+    height: 100%;
+  }
+  .links-container ul li {
+    justify-content: center;
+    display: flex;
+    margin-top: 25%;
+  }
+  .links-container ul li a {
+    color: white;
+    font-size: 2rem;
+  }
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+
+  background-color: #f4f4f4;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 7vw;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+img {
+  width: 75px;
+}
+
+.hamburger {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.logo:hover,
+li:hover {
+  opacity: 50%;
+  transition: 0.3s;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+.navbar{
+  width:100%;
+}
