@@ -1,7 +1,8 @@
-import React from "react";
-import "./Events.css";
-import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@mui/material";
+import React from "react"
+import "./Events.css"
+import Carousel from "react-material-ui-carousel"
+import { Paper, Button } from "@mui/material"
+import Footer from "../../Components/Footer/Footer"
 
 function Events() {
   // add events here
@@ -60,26 +61,29 @@ function Events() {
       link: "TBD",
       time: "TBD",
     },
-  ];
+  ]
 
   return (
-    <div className="events">
-      <div className="events-top-container">
-        <div className="events-title">Events</div>
-        <div className="events-description">
-          <b className="bold-text">Empowering students</b> through professional
-          development, technical and community events
+    <>
+      <div className="events">
+        <div className="events-top-container">
+          <div className="events-title">Events</div>
+          <div className="events-description">
+            <b className="bold-text">Empowering students</b> through
+            professional development, technical and community events
+          </div>
         </div>
+        <div className="events-carousel">
+          <Carousel className="carousel">
+            {items.map((item, i) => (
+              <Item key={i} item={item} />
+            ))}
+          </Carousel>
+        </div>
+        <Footer />
       </div>
-      <div className="events-carousel">
-        <Carousel className="carousel">
-          {items.map((item, i) => (
-            <Item key={i} item={item} />
-          ))}
-        </Carousel>
-      </div>
-    </div>
-  );
+    </>
+  )
 }
 
 function Item(props) {
@@ -92,7 +96,7 @@ function Item(props) {
         Link: {props.item.link}
       </a>
     </Paper>
-  );
+  )
 }
 
-export default Events;
+export default Events

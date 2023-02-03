@@ -1,9 +1,8 @@
 import React from "react"
+import Typewriter from "typewriter-effect"
+import Footer from "../../Components/Footer/Footer"
 import "./Home.css"
 import tech from "./tech.png"
-import Toolkit from "../../Components/Toolkit/toolkit"
-import Typewriter from "typewriter-effect"
-import Footer from "../../Components/Footer"
 
 const WHAT_IS_WDS_POINTS = [
   "We are a community of developers, designers, consultants, and engineers",

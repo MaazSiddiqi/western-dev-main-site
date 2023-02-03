@@ -29,10 +29,10 @@
   color: rgb(255, 253, 244);
 }
 .carousel {
-    z-index: 0;
+  z-index: 0;
 }
 .carousel {
-    z-index: 0;
+  z-index: 0;
 }
 
 .events-title {
@@ -71,7 +71,7 @@
 }
 
 .events-carousel {
-  height: 100%;
+  flex-grow: 1;
   padding: 5% 10%;
 }
 

@@ -2,6 +2,7 @@ import React, { useCallback, useState } from "react"
 import { FaFacebookSquare, FaInstagram, FaLinkedin } from "react-icons/fa"
 import "./Contact.css"
 import axios from "axios"
+import Footer from "../../Components/Footer/Footer"
 
 const RECIEVER_EMAIL = "lblommes@uwo.ca"
 
@@ -150,6 +151,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

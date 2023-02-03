@@ -1,4 +1,6 @@
-import Toolkit from "./Toolkit/toolkit"
+import React from "react"
+import Toolkit from "../Toolkit/toolkit"
+import "./Footer.css"
 
 const Footer = () => {
   return (

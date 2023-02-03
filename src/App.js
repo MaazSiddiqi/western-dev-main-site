@@ -18,11 +18,9 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Toolkit" element={<Toolkit />} />
-            <Route path="/Contact" element={<Contact></Contact>} />
-            <Route path="/Portfolio" element={<Portfolio />} />
-            <Route path="/AboutUs" element={<Aboutus />} />
+            <Route path="/Contact" element={<Contact />} />
             <Route path="/JoinUs" element={<JoinUs />} />
+            <Route path="/AboutUs" element={<Aboutus />} />
             <Route path="/Events" element={<Events />} />
           </Routes>
         </div>
