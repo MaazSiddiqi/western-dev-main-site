@@ -3,10 +3,16 @@
   .hamburger {
     display: block !important;
     z-index: 100;
-    background-color: transparent;
-    width: 26px;
+    background-color: transparent !important;
+    width: 26px !important;
+    box-shadow: none !important;
     background-size: cover;
     transition: 0.1s ease;
+    border-radius: 0 !important;
+    border: none;
+    padding: 0 !important;
+    cursor: pointer;
+    aspect-ratio: 1 / 1;
   }
   .hamburger:not(.active) {
     background-image: url("hamburger.png");
